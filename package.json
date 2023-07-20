@@ -1,7 +1,7 @@
 {
-  "name": "adhan",
-  "description": "High precision Islamic prayer time library",
-  "version": "4.4.3",
+  "name": "adhan-extended",
+  "description": "High precision Islamic prayer time library (extended)",
+  "version": "5.0.0",
   "author": "Ameir Al-Zoubi <ameir@ameir.com>",
   "license": "MIT",
   "main": "lib/cjs/Adhan.js",
@@ -27,9 +27,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/batoulapps/adhan-js.git"
+    "url": "https://github.com/meypod/adhan-js.git"
   },
-  "homepage": "https://github.com/batoulapps/adhan-js",
+  "homepage": "https://github.com/meypod/adhan-js",
   "keywords": [
     "adhan",
     "islam",
