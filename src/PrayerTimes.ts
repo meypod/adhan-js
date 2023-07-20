@@ -202,6 +202,9 @@ export default class PrayerTimes {
     const maghribAdjustment =
       (calculationParameters.adjustments.maghrib || 0) +
       (calculationParameters.methodAdjustments.maghrib || 0);
+    const sunsetAdjustment =
+      (calculationParameters.adjustments.sunset || 0) +
+      (calculationParameters.methodAdjustments.sunset || 0);
     const ishaAdjustment =
       (calculationParameters.adjustments.isha || 0) +
       (calculationParameters.methodAdjustments.isha || 0);
@@ -222,7 +225,10 @@ export default class PrayerTimes {
       dateByAddingMinutes(asrTime, asrAdjustment),
       calculationParameters.rounding,
     );
-    this.sunset = roundedMinute(sunsetTime, calculationParameters.rounding);
+    this.sunset = roundedMinute(
+      dateByAddingMinutes(sunsetTime, sunsetAdjustment),
+      calculationParameters.rounding,
+    );
     this.maghrib = roundedMinute(
       dateByAddingMinutes(maghribTime, maghribAdjustment),
       calculationParameters.rounding,

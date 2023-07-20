@@ -23,6 +23,7 @@ export default class CalculationParameters {
     dhuhr: 0,
     asr: 0,
     maghrib: 0,
+    sunset: 0,
     isha: 0,
   };
 
@@ -33,6 +34,7 @@ export default class CalculationParameters {
     dhuhr: 0,
     asr: 0,
     maghrib: 0,
+    sunset: 0,
     isha: 0,
   };
 
