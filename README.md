@@ -1,5 +1,9 @@
 # Adhan JavaScript
 
+**IMPORTANT**: This is a fork of [adhan-js](https://github.com/batoulapps/adhan-js) ([adhan](https://www.npmjs.com/package/adhan)) package with extended functionality to be used inside [Al-Azan](https://github.com/meypod/al-azan) app. use it at your own discretion.
+
+---
+
 [![badge-version][]][npm] [![badge-travis][]][travis] [![badge-cov][]][codecov] [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 Adhan JavaScript is a well tested and well documented library for calculating Islamic prayer times in JavaScript using Node or a web browser.
