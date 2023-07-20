@@ -9,7 +9,7 @@ import PrayerTimes from './PrayerTimes';
 import Qibla from './Qibla';
 import { Rounding } from './Rounding';
 import { Shafaq } from './Shafaq';
-import SunnahTimes from './SunnahTimes';
+import { MidnightMethod, SunnahTimes } from './SunnahTimes';
 
 export {
   Prayer,
@@ -20,6 +20,7 @@ export {
   CalculationMethod,
   PrayerTimes,
   SunnahTimes,
+  MidnightMethod,
   Qibla,
   PolarCircleResolution,
   Rounding,
