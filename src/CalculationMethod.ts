@@ -36,7 +36,7 @@ const CalculationMethod = {
       sunrise: -3,
       dhuhr: 3,
       asr: 3,
-      maghrib: 3,
+      sunset: 3,
     };
     return params;
   },
@@ -47,7 +47,7 @@ const CalculationMethod = {
     params.methodAdjustments = {
       ...params.methodAdjustments,
       dhuhr: 5,
-      maghrib: 3,
+      sunset: 3,
     };
 
     return params;
@@ -92,7 +92,7 @@ const CalculationMethod = {
       sunrise: -7,
       dhuhr: 5,
       asr: 4,
-      maghrib: 7,
+      sunset: 7,
     };
     return params;
   },
