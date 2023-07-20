@@ -10,7 +10,7 @@ export enum MidnightMethod {
   Jafari = 'jafari',
 }
 
-export default class SunnahTimes {
+export class SunnahTimes {
   middleOfTheNight: Date;
   lastThirdOfTheNight: Date;
   /** night duration in milliseconds */
@@ -48,3 +48,5 @@ export default class SunnahTimes {
     );
   }
 }
+
+export default SunnahTimes;
