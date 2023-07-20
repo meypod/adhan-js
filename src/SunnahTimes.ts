@@ -13,6 +13,8 @@ export enum MidnightMethod {
 export default class SunnahTimes {
   middleOfTheNight: Date;
   lastThirdOfTheNight: Date;
+  /** night duration in milliseconds */
+  nightDuration: number;
 
   constructor(prayerTimes: PrayerTimes, midnightMethod?: MidnightMethod) {
     const date = prayerTimes.date;
@@ -34,13 +36,15 @@ export default class SunnahTimes {
         break;
     }
 
-    const nightDuration = (dawnTime - prayerTimes.sunset.getTime()) / 1000.0;
+    this.nightDuration = dawnTime - prayerTimes.sunset.getTime();
+
+    const nightDurationSecs = this.nightDuration / 1000.0;
 
     this.middleOfTheNight = roundedMinute(
-      dateByAddingSeconds(prayerTimes.sunset, nightDuration / 2),
+      dateByAddingSeconds(prayerTimes.sunset, nightDurationSecs / 2),
     );
     this.lastThirdOfTheNight = roundedMinute(
-      dateByAddingSeconds(prayerTimes.sunset, nightDuration * (2 / 3)),
+      dateByAddingSeconds(prayerTimes.sunset, nightDurationSecs * (2 / 3)),
     );
   }
 }
