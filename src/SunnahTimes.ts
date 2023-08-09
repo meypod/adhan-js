@@ -6,8 +6,8 @@ import {
 import PrayerTimes from './PrayerTimes';
 
 export enum MidnightMethod {
-  Standard = 'standard',
-  Jafari = 'jafari',
+  SunsetToSunrise = 'SunsetToSunrise',
+  SunsetToFajr = 'SunsetToFajr',
 }
 
 export class SunnahTimes {
@@ -27,10 +27,10 @@ export class SunnahTimes {
 
     let dawnTime;
     switch (midnightMethod) {
-      case MidnightMethod.Jafari:
+      case MidnightMethod.SunsetToFajr:
         dawnTime = nextDayPrayerTimes.fajr.getTime();
         break;
-      case MidnightMethod.Standard:
+      case MidnightMethod.SunsetToSunrise:
       default:
         dawnTime = nextDayPrayerTimes.sunrise.getTime();
         break;
