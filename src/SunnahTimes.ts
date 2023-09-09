@@ -11,6 +11,7 @@ export enum MidnightMethod {
 }
 
 export class SunnahTimes {
+  firstThirdOfTheNight: Date;
   middleOfTheNight: Date;
   lastThirdOfTheNight: Date;
   /** night duration in milliseconds */
@@ -40,6 +41,9 @@ export class SunnahTimes {
 
     const nightDurationSecs = this.nightDuration / 1000.0;
 
+    this.firstThirdOfTheNight = roundedMinute(
+      dateByAddingSeconds(prayerTimes.sunset, nightDurationSecs * (1 / 3)),
+    );
     this.middleOfTheNight = roundedMinute(
       dateByAddingSeconds(prayerTimes.sunset, nightDurationSecs / 2),
     );
