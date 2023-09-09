@@ -1,7 +1,7 @@
 {
   "name": "adhan-extended",
   "description": "High precision Islamic prayer time library (extended)",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "author": "Ameir Al-Zoubi <ameir@ameir.com>",
   "license": "MIT",
   "main": "lib/cjs/Adhan.js",
